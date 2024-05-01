@@ -1,17 +1,13 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { LoginPage } from "./login";
-import { ListPage } from "./list";
-import { DetailPage } from "./detail";
+import React from 'react';
+import { RouterComponent } from 'core/router';
+import { ThemeProviderComponent } from 'core/theme';
 
-export const App = () => {
+const App: React.FC = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/list" element={<ListPage />} />
-        <Route path="/detail/:id" element={<DetailPage />} />
-      </Routes>
-    </Router>
+    <ThemeProviderComponent>
+      <RouterComponent />
+    </ThemeProviderComponent>
   );
 };
+
+export default App;
