@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage" : "https://github.com/Faq-ndo/gh-pages-manual",
+  "homepage" : "https://faq-ndo.github.io/gh-pages-manual/",
     "scripts": {
     "start": "run-p -l type-check:watch start:dev",
     "type-check": "tsc --noEmit",
